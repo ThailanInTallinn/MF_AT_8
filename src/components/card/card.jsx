@@ -8,6 +8,7 @@ import {
   TableContainer,
   TableHead,
   TableData,
+  TextContainer,
 } from "../styledcomponents";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
@@ -18,10 +19,12 @@ export default function Card() {
     <CardContainer>
       <InfoContainer>
         <ProfilePic src="https://a.pinatafarm.com/800x450/34164cea84/mike-wazowski-4d795f2a9e2984d3986f7ffe8e2892f4-meme.jpeg" />
-        <Name>Mike Wazowski</Name>
-        <SmallerInfo>07/12/1984</SmallerInfo>
-        <SmallerInfo>Sustos</SmallerInfo>
-        <SmallerInfo>Assistente</SmallerInfo>
+        <TextContainer>
+          <Name>Mike Wazowski</Name>
+          <SmallerInfo>07/12/1984</SmallerInfo>
+          <SmallerInfo>Sustos</SmallerInfo>
+          <SmallerInfo>Assistente</SmallerInfo>
+        </TextContainer>
         <IconsContainer>
           <FaPhoneAlt></FaPhoneAlt>
           <IoMdMail></IoMdMail>

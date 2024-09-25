@@ -13,6 +13,11 @@ export const CardContainer = styled.div`
     height: 100%;
     width: 100%;
   }
+
+  @media screen and (max-width: 932px) and (orientation: landscape) {
+    width: 100vw;
+    height: 100%;
+  }
 `;
 
 export const InfoContainer = styled.div`
@@ -22,10 +27,15 @@ export const InfoContainer = styled.div`
   flex-direction: column;
   background-color: lightgray;
   align-items: center;
+
+  @media screen and (max-width: 932px) and (orientation: landscape) {
+    flex-direction: row;
+    height: 50%;
+  }
 `;
 
 export const ProfilePic = styled.img`
-  height: 50%;
+  height: 100%;
 `;
 
 export const Name = styled.h2`
@@ -55,12 +65,25 @@ export const IconsContainer = styled.div`
     flex-grow: 1;
     font-size: 2rem;
   }
+
+  @media screen and (max-width: 932px) and (orientation: landscape) {
+    flex-direction: column;
+    height: 100%;
+    width: 10%;
+    justify-content: space-around;
+    align-items: center;
+  }
 `;
 
 export const TableContainer = styled.table`
   width: 100%;
   height: 50%;
   color: black;
+
+  @media screen and (max-width: 932px) and (orientation: landscape) {
+    height: 70%;
+    width: 100%;
+  }
 `;
 
 export const TableHead = styled.th`
@@ -72,4 +95,17 @@ export const TableData = styled.td`
   color: black;
   background-color: lightgray;
   text-align: center;
+`;
+
+export const TextContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  @media screen and (max-width: 932px) and (orientation: landscape) {
+    flex-direction: column;
+  }
 `;
