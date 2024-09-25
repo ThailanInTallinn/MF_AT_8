@@ -35,7 +35,11 @@ export const InfoContainer = styled.div`
 `;
 
 export const ProfilePic = styled.img`
-  height: 100%;
+  height: 40%;
+
+  @media screen and (max-width: 932px) and (orientation: landscape) {
+    height: 100%;
+  }
 `;
 
 export const Name = styled.h2`
